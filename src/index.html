@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+	  
+	  <script src="https://code.angularjs.org/1.4.0/angular-route.min.js"></script>
+		<meta charset="utf-8"/>
+	  <title>AngularJS Part1</title>
+		<script src="https://code.angularjs.org/1.4.0/angular.js"></script>
+		<script src="app/app.module.js"></script>
+		<script src="app/components/controllers/main.controller.js"> </script>
+		<script src ="app/components/filters/filter.js"></script>
+		<link rel="stylesheet" href="app/css/style.css">
+	</head>
+	
+	<body>
+	  <header class="header">
+		<h1>Comparation of JavaScript Frameworks</h1>
+		</header>
+		<div class="wrapper">
+		<div class="intro">
+			All listed frameworks have a lot in common:<br> 
+			they are open-sourced, released under the permissive MIT license, 
+			and try to solve the problem of creating Single Page Web Applications 
+			using the MV* design pattern.<br> 
+			They all have the concept of views, events, data models and routing.<br>
+			Compare those 3 frameworks by giving them as much points as you think they deserve:
+		</div>
+
+  	<div ng-controller='MainController'>
+		<div class="comapare">
+			<button class="points" ng-click="points1()">{{ prefer1.points }} </button>
+			<p class = "answer"> <strong>{{prefer1.name}}</strong> </p>
+			<p class = "done"> {{prefer1.points | tempResults}} </p>
+			<br>
+		</div>
+		<div class="compare">
+			<button class="points" ng-click="points2()">{{ prefer2.points }} </button>
+			<p class = "answer"> <strong>{{prefer2.name}}</strong> </p>
+			<p class = "done"> {{prefer2.points | tempResults}} </p>
+			<br>
+		</div>
+		<div class="compare">
+			<button class="points" ng-click="points3()"> {{ prefer3.points }} </button>
+			<p class = "answer"> <strong>{{prefer3.name}}</strong> </p>
+			<p class = "done"> {{prefer3.points | tempResults}} </p>
+		</div>
+		
+	</div>
+	</div>
+	
+	
+	
+</body>
+	
+</html>

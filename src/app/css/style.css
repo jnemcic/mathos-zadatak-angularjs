@@ -1,0 +1,26 @@
+body {
+    background-color: #C0C0C0;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 80%;
+    background-color:#E6F0F0;
+    padding: 5%;
+}
+
+.intro{
+  padding-bottom: 5%;
+}
+
+.header{
+    text-align: center;
+}
+
+.points{
+    width: 20%;
+	padding: 3%;
+    background-color: #C0C0C0;
+    border-radius: 5%;
+    font-weight: bold;
+}
